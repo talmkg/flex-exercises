@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout1</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Roboto:wght@700&display=swap");
+      html,
+      body {
+        font-family: "Inter", sans-serif;
+        font-family: "Roboto", sans-serif;
+        height: 100%;
+
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        display: flex;
+      }
+      #header {
+        width: 100vw;
+        padding: 1rem;
+        background-color: #111023;
+        height: 10vh;
+      }
+      #container {
+        display: flex;
+        flex-direction: row;
+      }
+      .container-item {
+        height: 85vh;
+        padding: 1rem;
+      }
+      #article {
+        background-color: aliceblue;
+        color: #111023;
+        width: 60vw;
+      }
+      #aside {
+        background-color: #320388;
+        width: 18vw;
+      }
+      #nav {
+        width: 18vw;
+        background-color: #c22177;
+      }
+      #footer {
+        padding: 1rem;
+        background-color: #111023;
+        height: 12vh;
+      }
+      /*phone view*/
+      @media only screen and (max-width: 575px) {
+        body {
+        }
+      }
+      /*tablet view*/
+      @media only screen and (max-width: 800px) {
+        .container-item {
+          height: 1vh;
+          padding: 1rem;
+        }
+      }
+      #nav {
+        flex-direction: row;
+        width: 100%;
+        height: 10%;
+        flex-shrink: 0;
+      }
+      #article {
+        height: 75vh;
+      }
+
+      /*pc view*/
+      @media only screen and (min-width: 801px) {
+      }
+    </style>
+  </head>
+  <body>
+    <website id="website">
+      <header id="header">Header</header>
+      <container id="container">
+        <div class="container-item" id="nav">Nav</div>
+        <div class="container-item" id="article">Article</div>
+        <div class="container-item" id="aside">Aside</div>
+      </container>
+      <footer id="footer">Footer</footer>
+    </website>
+  </body>
+</html>
