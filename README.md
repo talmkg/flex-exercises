@@ -5,6 +5,6 @@
   <h4>Exercise 2:</h4>
   <img src="https://i.imgur.com/91d6BWA.png"/>
   <h4>Exercise 3:</h4>
-  <img src="https://i.imgur.com/sfAOGRL.png"/>
+  <img src="https://i.imgur.com/KYdAHOY.png"/>
   
 </p>
