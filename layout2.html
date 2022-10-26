@@ -28,24 +28,34 @@
       #header {
         padding: 1rem;
         background-color: #111023;
-        height: 12vh;
+        height: 15vh;
         width: 100vw;
       }
       #container {
+        display: flex;
+        flex-direction: column;
+      }
+      #container-items {
+        display: flex;
         flex-direction: row;
+        height: 65vh;
       }
       #article {
-        background-color: aqua;
-        height: 30vh;
-        width: 30vw;
+        padding: 1rem;
+        background-color: #ffffff;
+        color: #111023;
+
+        width: 60vw;
       }
       #aside {
-        background-color: #c22177;
-        height: 30vh;
+        padding: 1rem;
+        background-color: #320388;
         width: 30vw;
       }
-      .container-item {
-        flex-direction: column;
+      #footer {
+        padding: 1rem;
+        background-color: #111023;
+        height: 20vh;
       }
     </style>
   </head>
@@ -53,8 +63,10 @@
     <div id="nav">Nav</div>
     <div id="container">
       <div id="header">Header</div>
-      <div id="article" class="container-item">Article</div>
-      <div id="aside" class="container-item">Aside</div>
+      <div id="container-items">
+        <div id="article" class="container-item">Article</div>
+        <div id="aside" class="container-item">Aside</div>
+      </div>
       <div id="footer">Footer</div>
     </div>
   </body>
